@@ -84,8 +84,10 @@ curl --location 'http://localhost:8080/weather' \
 -   Status: `422`
 -   Body:
 
-```{=html}
-<!-- -->
+``` bash
+curl --location 'http://localhost:8080/weather' \
+--header 'Content-Type: application/json' \
+--data '{"cep":"29902"}'
 ```
     invalid zipcode
 
@@ -94,8 +96,10 @@ curl --location 'http://localhost:8080/weather' \
 -   Status: `404`
 -   Body:
 
-```{=html}
-<!-- -->
+``` bash
+curl --location 'http://localhost:8080/weather' \
+--header 'Content-Type: application/json' \
+--data '{"cep":"00000000"}'
 ```
     can not find zipcode
 
