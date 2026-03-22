@@ -1,0 +1,13 @@
+.DS_Store
+*.log
+
+# Go
+/bin/
+/dist/
+/tmp/
+**/vendor/
+**/*.test
+
+# IDE
+.vscode/
+.idea/
